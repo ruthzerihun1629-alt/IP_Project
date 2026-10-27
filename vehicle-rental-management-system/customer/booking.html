@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Booking Page</title>
+    </head>
+    <body>
+        <form>
+            <fieldset> 
+               <legend><b>Vehicle: </b></legend>
+                <label for="vehicle-name">Vehicle Name: </label>
+                <input type="search"> <br> <br>
+                <label for="vehicle-type">Vehicle Type: </label>
+                <input type="search"> <br> <br>
+            </fieldset> <br> <br>
+            <fieldset>
+              <legend><b>Customer Information:</b> </legend>
+               <label for="customer-name">Full Name: </label>
+                <input type="text" placeholder="Abebe" required> <br> <br>
+                <label for="customer-email">Email:</label>
+                <input type="email" required placeholder="abebe@gmail.com"> <br> <br>
+                <label for="customer-phone">Phone Number: </label>
+                <input type="tel" placeholder="=251 901 234 5678" required pattern="+251 [0-9]{3} [0-9]{3} [0-9]{4}"> <br> <br>
+                </fieldset>
+            <br> <br>
+            <fieldset>            
+                <legend> <b>Renting Process:</b> </legend>
+               <label for="pick-up date">Pick-Up Date: </label>
+            <input type="date" required> <br> <br>
+            <label for="return-date">Return Date: </label>
+            <input type="date" required> <br> <br>
+            <label for="pick-up location"> Pick-Up Location: </label>
+            <select>
+                <option>Addis Ababa Bole International Airport</option>
+                <option>BahirDar Airport</option>
+                <option>Hawassa Airport</option>
+                <option>Dire Dawa Airport</option>
+            </select> <br> <br>
+            <label for="return location"> Return Location: </label>
+            <select>
+                <option>Addis Ababa Bole International Airport</option>
+                <option>BahirDar Airport</option>
+                <option>Hawassa Airport</option>
+                <option>Dire Dawa Airport</option>
+            </select> 
+            </fieldset>
+            <br> <br>
+            <label for="special requests"> <b>Special Requests:</b> </label>
+            <p> Please specify the things you want to be provided with that are outside this list.</p>
+            <textarea rows="4" cols="50" placeholder="Type your text here..."></textarea>
+            <br> <br> 
+            <button type="submit">Book</button>
+            <button type="reset">Reset</button>
+
+        </form>
+    </body>
+</html>
