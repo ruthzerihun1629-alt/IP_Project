@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Rental Payment</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vehicle Rental Management System</h1>
+        <hr>
+
+        <nav>
+
+            <a href="payment_confirmation.html">Payment Confirmation</a> |
+            <a href="receipt.html">Receipt</a>
+        </nav>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <h2>Payment Summary</h2>
+
+        <p>
+            Review your booking information and rental charges
+
+        </p>
+
+        <h3>1. Booking Information</h3>
+
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Information</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Booking Reference</td>
+                <td>2026-001</td>
+            </tr>
+            <tr>
+                <td>Vehicle</td>
+                <td>Toyota Corolla</td>
+            </tr>
+            <tr>
+                <td>Pickup Date</td>
+                <td>October 28, 2026</td>
+            </tr>
+            <tr>
+                <td>Return Date</td>
+                <td>October 30, 2026</td>
+            </tr>
+            <tr>
+                <td>Rental Duration</td>
+                <td>2 Days</td>
+            </tr>
+        </table>
+
+        <h3>2. Rental Cost Breakdown</h3>
+
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Description</th>
+                <th>Amount (ETB)</th>
+            </tr>
+            <tr>
+                <td>Daily Rental Price</td>
+                <td>3,000.00</td>
+            </tr>
+            <tr>
+                <td>Rental Cost for 2 Days</td>
+                <td>6,000.00</td>
+            </tr>
+            <tr>
+                <td>Service Fee</td>
+                <td>300.00</td>
+            </tr>
+            <tr>
+                <th>Total Estimated Amount</th>
+                <th>6,300.00 ETB</th>
+            </tr>
+        </table>
+
+        <h3>3. Select Payment Method</h3>
+
+        <form action="payment_confirmation.html" method="get">
+
+            <p>
+                <input type="radio" id="telebirr" name="payment_method" value="Telebirr" required>
+                <label for="telebirr">Telebirr</label>
+            </p>
+
+            <p>
+                <input type="radio" id="cbe" name="payment_method" value="CBE Birr">
+                <label for="cbe">CBE Birr</label>
+            </p>
+
+            <p>
+                <input type="radio" id="bank" name="payment_method" value="Bank Transfer">
+                <label for="bank">Bank Transfer</label>
+            </p>
+
+            <p>
+                <input type="radio" id="cash" name="payment_method" value="Cash">
+                <label for="cash">Cash Payment</label>
+            </p>
+
+            <button type="submit">Proceed to Payment</button>
+
+        </form>
+
+        <p>
+            <strong>Note:</strong>
+            This page demonstrates the payment interface.
+            No real payment transaction is processed.
+        </p>
+
+        <hr>
+
+        <p>
+            <a href="receipt.html">View Sample Receipt</a>
+        </p>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p> aastu Vehicle Rental Management System</p>
+    </footer>
+
+</body>
+
+</html>
