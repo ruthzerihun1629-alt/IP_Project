@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse available rental vehicles">
+    <title>Vehicles - Vehicle Rental Management System</title>
+</head>
+<body>
+
+    <header>
+        <h1>Vehicle Rental Management System</h1>
+
+        <nav aria-label="Customer navigation">
+            <a href="../index.html">Home</a> |
+            <a href="vehicles.html">Vehicles</a> |
+            <a href="favorite.html">Favorites</a> |
+            <a href="mybooking.html">My Bookings</a> |
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="login.html">Login</a> |
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Available Rental Vehicles</h2>
+            <p>Browse our vehicles and choose the one that best suits your needs.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Search and Filter Vehicles</h2>
+
+            <form action="vehicles.html" method="get">
+                <label for="search">Search by vehicle name:</label><br>
+                <input type="search" id="search" name="search"
+                       placeholder="Enter vehicle name"><br><br>
+
+                <label for="category">Vehicle Category:</label><br>
+                <select id="category" name="category">
+                    <option value="">All Categories</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="sports">Sports Car</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="van">Van</option>
+                </select><br><br>
+
+                <label for="transmission">Transmission:</label><br>
+                <select id="transmission" name="transmission">
+                    <option value="">All Transmissions</option>
+                    <option value="automatic">Automatic</option>
+                    <option value="manual">Manual</option>
+                </select><br><br>
+
+                <label for="min_price">Minimum Daily Price (ETB):</label><br>
+                <input type="number" id="min_price" name="min_price"
+                       min="0" placeholder="Minimum price"><br><br>
+
+                <label for="max_price">Maximum Daily Price (ETB):</label><br>
+                <input type="number" id="max_price" name="max_price"
+                       min="0" placeholder="Maximum price"><br><br>
+
+                <button type="submit">Search Vehicles</button>
+                <button type="reset">Clear Filters</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Our Vehicles</h2>
+
+            <article>
+                <h3>Toyota Corolla</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1623869675781-80aa31012a5a?auto=format&fit=crop&w=600&q=80"
+                    alt="Toyota Corolla rental car"
+                    width="300"
+                >
+
+                <p><strong>Vehicle ID:</strong> VEH-001</p>
+                <p><strong>Category:</strong> Sedan</p>
+                <p><strong>Transmission:</strong> Automatic</p>
+                <p><strong>Seats:</strong> 5</p>
+                <p><strong>Daily Price:</strong> ETB 3,000</p>
+                <p><strong>Availability:</strong> Available</p>
+
+                <p>
+                    A comfortable sedan suitable for city travel,
+                    business trips, and everyday use.
+                </p>
+
+                <p>
+                    <a href="vehicle_details.html">View Details</a>
+                    |
+                    <a href="booking.html">Book Now</a>
+                </p>
+
+                <form action="#" method="post">
+                    <input type="hidden" name="vehicle_id" value="VEH-001">
+                    <button type="submit" name="action" value="favorite">
+                        Add to Favorites
+                    </button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Hyundai Tucson</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=600&q=80"
+                    alt="SUV rental vehicle"
+                    width="300"
+                >
+
+                <p><strong>Vehicle ID:</strong> VEH-002</p>
+                <p><strong>Category:</strong> SUV</p>
+                <p><strong>Transmission:</strong> Automatic</p>
+                <p><strong>Seats:</strong> 5</p>
+                <p><strong>Daily Price:</strong> ETB 5,000</p>
+                <p><strong>Availability:</strong> Available</p>
+
+                <p>
+                    A spacious SUV suitable for family trips,
+                    long journeys, and comfortable travel.
+                </p>
+
+                <p>
+                    <a href="vehicle_details.html">View Details</a>
+                    |
+                    <a href="booking.html">Book Now</a>
+                </p>
+
+                <form action="#" method="post">
+                    <input type="hidden" name="vehicle_id" value="VEH-002">
+                    <button type="submit" name="action" value="favorite">
+                        Add to Favorites
+                    </button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Chevrolet Camaro</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80"
+                    alt="Chevrolet Camaro sports car"
+                    width="300"
+                >
+
+                <p><strong>Vehicle ID:</strong> VEH-003</p>
+                <p><strong>Category:</strong> Sports Car</p>
+                <p><strong>Transmission:</strong> Automatic</p>
+                <p><strong>Seats:</strong> 4</p>
+                <p><strong>Daily Price:</strong> ETB 4,500</p>
+                <p><strong>Availability:</strong> Available</p>
+
+                <p>
+                    A stylish sports car suitable for special
+                    occasions and personal trips.
+                </p>
+
+                <p>
+                    <a href="vehicle_details.html">View Details</a>
+                    |
+                    <a href="booking.html">Book Now</a>
+                </p>
+
+                <form action="#" method="post">
+                    <input type="hidden" name="vehicle_id" value="VEH-003">
+                    <button type="submit" name="action" value="favorite">
+                        Add to Favorites
+                    </button>
+                </form>
+            </article>
+
+            <hr>
+
+            <article>
+                <h3>Toyota Hilux</h3>
+
+                <img
+                    src="https://images.unsplash.com/photo-1551830820-330a71b99659?auto=format&fit=crop&w=600&q=80"
+                    alt="Pickup truck rental vehicle"
+                    width="300"
+                >
+
+                <p><strong>Vehicle ID:</strong> VEH-004</p>
+                <p><strong>Category:</strong> Pickup</p>
+                <p><strong>Transmission:</strong> Manual</p>
+                <p><strong>Seats:</strong> 5</p>
+                <p><strong>Daily Price:</strong> ETB 4,000</p>
+                <p><strong>Availability:</strong> Available</p>
+
+                <p>
+                    A practical pickup truck suitable for transporting
+                    goods and travelling on different types of roads.
+                </p>
+
+                <p>
+                    <a href="vehicle_details.html">View Details</a>
+                    |
+                    <a href="booking.html">Book Now</a>
+                </p>
+
+                <form action="#" method="post">
+                    <input type="hidden" name="vehicle_id" value="VEH-004">
+                    <button type="submit" name="action" value="favorite">
+                        Add to Favorites
+                    </button>
+                </form>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Need Help?</h2>
+            <p>Contact us if you need assistance choosing a vehicle.</p>
+            <a href="contact.html">Contact Us</a>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Vehicle Rental Management System. All rights reserved.</p>
+
+        <p>
+            <a href="about.html">About Us</a> |
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+</body>
+</html>
