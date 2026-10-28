@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Submit a customer complaint to EthioDrive">
+<title>Customer Complaint - EthioDrive</title>
+</head>
+<body>
+
+<header>
+<h1>EthioDrive</h1>
+<h2>Customer Complaint Form</h2>
+<p>We value your feedback and want to improve our service.</p>
+
+<!-- Navigation can be added here later. -->
+</header>
+
+<hr>
+
+<main>
+<section id="complaint-form">
+<h2>Submit a Complaint</h2>
+
+<p>
+Please provide your details and explain the problem
+you experienced.
+</p>
+
+<form action="#" method="post">
+
+<fieldset>
+<legend>Customer Details</legend>
+
+<label for="customer-name">Full Name:</label><br>
+<input type="text" id="customer-name"
+name="customer_name" required><br><br>
+
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email"
+required><br><br>
+
+<label for="phone">Phone Number:</label><br>
+<input type="tel" id="phone" name="phone"
+required><br><br>
+
+<label for="booking-reference">
+Booking Reference (if applicable):
+</label><br>
+<input type="text" id="booking-reference"
+name="booking_reference"><br><br>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Complaint Details</legend>
+
+<label for="category">Complaint Category:</label><br>
+<select id="category" name="category" required>
+<option value="">Select a category</option>
+<option value="delayed-delivery">
+Delayed Vehicle Delivery
+</option>
+<option value="vehicle-condition">
+Vehicle Condition
+</option>
+<option value="unexpected-charges">
+Unexpected Charges
+</option>
+<option value="customer-service">
+Customer Service
+</option>
+<option value="other">Other</option>
+</select><br><br>
+
+<label for="subject">Subject:</label><br>
+<input type="text" id="subject" name="subject"
+required><br><br>
+
+<label for="message">Complaint Message:</label><br>
+<textarea id="message" name="message"
+rows="6" cols="40" required></textarea><br><br>
+</fieldset>
+
+<br>
+
+<button type="submit">Submit Complaint</button>
+<button type="reset">Clear Form</button>
+
+</form>
+</section>
+</main>
+
+<hr>
+
+<footer>
+<p>© 2026 EthioDrive. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
