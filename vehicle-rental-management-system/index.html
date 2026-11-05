@@ -1,69 +1,290 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vehicle Rental Management System">
-    <title>Home </title>
+    <meta name="description" content="Find and rent reliable vehicles for your next journey.">
+    <title>Vehicle Rental | Home</title>
 </head>
-
 <body>
+    <!-- Header and Navigation -->
+    <header>
+        <table width="100%" cellpadding="15">
+            <tr>
+                <td>
+                    <h1>🚘 VEHICLE RENTAL</h1>
+                    <p>Your Journey, Our Priority</p>
+                </td>
 
-    <section>
-        <h1>Vehicle Rental Management System</h1>
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a> |
-            <a href="pages/vehicles.html">Vehicles</a> |
-            <a href="pages/about.html">About Us</a> |
-            <a href="pages/contact.html">Contact Us</a> |
-            <a href="pages/login.html">Login</a> |
-            <a href="pages/register.html">Register</a>
-        </nav>
-    </section>
+                <td align="right">
+                    <nav aria-label="Main navigation">
+                        <a href="index.html">Home</a> &nbsp;&nbsp;
+                        <a href="customer/vehicles.html">Vehicles</a> &nbsp;&nbsp;
+                        <a href="customer/about.html">About Us</a> &nbsp;&nbsp;
+                        <a href="customer/contact.html">Contact</a> &nbsp;&nbsp;
+                        <a href="customer/login.html">Login</a> &nbsp;&nbsp;
+                        <a href="customer/register.html">Register</a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
     <hr>
     <main>
+        <!-- Hero Section -->
         <section>
-            <h2>Welcome to Our Vehicle Rental Service</h2>
-            <p>  
-                <a href="pages/vehicles.html"> Browse Available Vehicles</a>
-</p>
-            <h2>Find Your Perfect Ride</h2>
+            <table width="100%" cellpadding="20">
+                <tr>
+                    <td width="50%">
+                        <h1>Find the Perfect Vehicle for Every Journey</h1>
+
+                        <p>
+                            Explore a wide range of comfortable,
+                            reliable, and affordable vehicles.
+                            Whether you are planning a family trip,
+                            a business journey, or a weekend adventure,
+                            we make renting a vehicle simple and convenient.
+                        </p>
+
+                        <p>
+                            <a href="customer/vehicles.html">
+                                <strong>Explore Available Vehicles →</strong>
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="customer/register.html">Create an Account</a>
+                            &nbsp; | &nbsp;
+                            <a href="customer/login.html">Sign In</a>
+                        </p>
+                    </td>
+
+                    <td width="50%" align="center">
+                        <img
+                            src="assets/image/car.jpg"
+                            alt="Modern vehicle available for rental"
+                            width="500"
+                            height="320"
+                        >
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Search Section -->
+        <section>
+            <h2>Find Your Ideal Rental</h2>
+            <p>Choose your preferred rental details to get started.</p>
+            <form action="customer/vehicles.html" method="get">
+                <label for="pickup">Pickup Location:</label>
+                <input
+                    type="text"
+                    id="pickup"
+                    name="location"
+                    placeholder="Enter pickup location"
+                    required
+                >
+                &nbsp;
+                <label for="pickup-date">Pickup Date:</label>
+                <input
+                    type="date"
+                    id="pickup-date"
+                    name="pickup_date"
+                    required
+                >
+                &nbsp;
+                <label for="return-date">Return Date:</label>
+                <input
+                    type="date"
+                    id="return-date"
+                    name="return_date"
+                    required
+                >
+                <br><br>
+                <button type="submit">Search Vehicles</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Featured Vehicles -->
+        <section>
+            <h2>Explore Our Vehicles</h2>
 
             <p>
-                Discover comfortable, affordable, and reliable
-                vehicles for your next journey.
-                Whether you're traveling for business,
-                vacation, or everyday needs,
-                EthioDrive has the right vehicle for you.
+                Discover vehicles suitable for different needs
+                and travel experiences.
             </p>
 
-            <img
-                src="assets/image/car.jpg"
-                alt="Modern rental vehicle"
-                width="550" height="500"
-            >
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td align="center">
+                        <img
+                            src="assets/image/car.jpg"
+                            alt="Comfortable sedan vehicle"
+                            width="250"
+                            height="160"
+                        >
+
+                        <h3>Economy Cars</h3>
+
+                        <p>
+                            Affordable and fuel-efficient vehicles
+                            for everyday travel.
+                        </p>
+
+                        <a href="customer/vehicles.html">View Vehicles</a>
+                    </td>
+
+                    <td align="center">
+                        <img
+                            src="assets/image/car.jpg"
+                            alt="Spacious SUV vehicle"
+                            width="250"
+                            height="160"
+                        >
+
+                        <h3>SUVs</h3>
+
+                        <p>
+                            Spacious and comfortable vehicles
+                            for family trips and adventures.
+                        </p>
+
+                        <a href="customer/vehicles.html">View Vehicles</a>
+                    </td>
+
+                    <td align="center">
+                        <img
+                            src="assets/image/car.jpg"
+                            alt="Luxury rental vehicle"
+                            width="250"
+                            height="160"
+                        >
+
+                        <h3>Luxury Cars</h3>
+
+                        <p>
+                            Enjoy premium comfort and style
+                            for special occasions.
+                        </p>
+
+                        <a href="customer/vehicles.html">View Vehicles</a>
+                    </td>
+                </tr>
+            </table>
 
             <p>
-                <a href="vehicles.html">Explore Vehicles</a>
-                |
-                <a href="booking.html">Book a Vehicle</a>
+                <a href="customer/vehicles.html">
+                    <strong>View All Available Vehicles →</strong>
+                </a>
             </p>
-        
+        </section>
+
+        <hr>
+
+        <!-- Why Choose Us -->
+        <section>
+            <h2>Why Choose Our Rental Service?</h2>
+
+            <table width="100%" cellpadding="15">
+                <tr>
+                    <td align="center">
+                        <h3>✓ Reliable Vehicles</h3>
+                        <p>
+                            Access well-maintained vehicles
+                            for a comfortable journey.
+                        </p>
+                    </td>
+
+                    <td align="center">
+                        <h3>✓ Easy Booking</h3>
+                        <p>
+                            Browse vehicles and make
+                            reservations conveniently.
+                        </p>
+                    </td>
+
+                    <td align="center">
+                        <h3>✓ Affordable Options</h3>
+                        <p>
+                            Find rental options that
+                            suit your travel needs.
+                        </p>
+                    </td>
+
+                    <td align="center">
+                        <h3>✓ Customer Support</h3>
+                        <p>
+                            Get assistance whenever
+                            you need help.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Call to Action -->
+        <section align="center">
+            <h2>Ready for Your Next Journey?</h2>
+
+            <p>
+                Find your preferred vehicle and start
+                planning your trip today.
+            </p>
+
+            <p>
+                <a href="customer/vehicles.html">
+                    <strong>Browse Vehicles</strong>
+                </a>
+                &nbsp; | &nbsp;
+                <a href="customer/register.html">
+                    Create an Account
+                </a>
+            </p>
         </section>
 
     </main>
+
     <hr>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+    <!-- Footer -->
     <footer>
-        <p>
+        <table width="100%" cellpadding="15">
+            <tr>
+                <td>
+                    <h3>Vehicle Rental</h3>
+                    <p>
+                        Making every journey comfortable,
+                        convenient, and reliable.
+                    </p>
+                </td>
+
+                <td>
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="customer/vehicles.html">Vehicles</a></p>
+                    <p><a href="customer/about.html">About Us</a></p>
+                </td>
+
+                <td>
+                    <h3>Customer Support</h3>
+                    <p><a href="customer/contact.html">Contact Us</a></p>
+                    <p><a href="customer/login.html">Login</a></p>
+                    <p><a href="customer/register.html">Register</a></p>
+                </td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <p align="center">
             &copy; 2026 Vehicle Rental Management System.
             All rights reserved.
-        </p>
-
-        <p>
-            <a href="pages/about.html">About Us</a> |
-            <a href="pages/contact.html">Contact</a>
         </p>
     </footer>
 
